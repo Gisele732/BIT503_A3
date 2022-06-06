@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queenscliffe Retreat & Airbnb / Gallery</title>
+    <link rel='stylesheet' type='text/css' href='../styles.css'>
+</head>
+<body>
+<div class="header"><h1>Photo Gallery</h1>
+<br>
+    <p>Click on the images to expand</p>
+</div>
+<br>
+<div class="navigation">
+    <br>
+    <h2 style="text-align: center;">Menu:</h2>
+    <br>
+    <ul><li><a href="../index.html">Home</a></li>
+        <br>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <br>
+        <li><a href="./experience.html">Experience Queenscliffe</a></li>
+        <br>
+        <li><a href= "./about.html">About our home</a></li>
+        <br>
+        <li><a href="./contact_us.html">Contact us</a></li>
+        <br>
+        <br>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="row">
+        <div class="columnPhoto" onclick="openTab('b1');"><img src="../images/house_front.png" alt="Front of the house"></div>
+        <div class="columnPhoto" onclick="openTab('b2');"><img src="../images/house_deck.png" alt="Back of the house with deck area"></div>
+        <div class="columnPhoto" onclick="openTab('b3');"><img src="../images/house_living.png" alt="Living room"></div>
+        <div class="columnPhoto" onclick="openTab('b4');"><img src="../images/house_dining.png" alt="Living room"></div>
+        <div class="columnPhoto" onclick="openTab('b5');"><img src="../images/house_poolTable.png" alt="Living room"></div>
+        <div class="columnPhoto" onclick="openTab('b6');"><img src="../images/house_pool.png" alt="Living room"></div>
+        <div class="columnPhoto" onclick="openTab('b7');"><img src="../images/house_bedroom1.png" alt="Living room"></div>
+        <div class="columnPhoto" onclick="openTab('b8');"><img src="../images/house_bathroom1.png" alt="Living room"></div>
+        <div class="columnPhoto" onclick="openTab('b9');"><img src="../images/house_bathroom2.png" alt="Living room"></div>
+      </div>
+      
+      <!-- The expanding grid (hidden by default) -->
+      <div id="b1" class="containerTab">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>View into the living room</h3>
+        <img src="../images/house_front.png" alt="View into living room">
+        <figcaption>View into the living area from the spacious deck</figcaption>
+      </div>
+      
+      <div id="b2" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>View from the deck</h3>
+        <img src="../images/house_deck.png" alt="View from the deck">
+        <figcaption>The deck leads to the infinity pool</figcaption>
+      </div>
+      
+      <div id="b3" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>Living area</h3>
+        <img src="../images/house_living.png" alt="Living area">
+        <figcaption>Comfortable couches and large flat-screen TV</figcaption>
+      </div>
+
+      <div id="b4" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>Dining area</h3>
+        <img src="../images/house_dining.png" alt="Dining area">
+        <figcaption>Large dining table and fantastic scenery</figcaption>
+      </div>
+
+      <div id="b5" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>Pool table</h3>
+        <img src="../images/house_poolTable.png" alt="Pool table">
+        <figcaption>Pool table in the living room</figcaption>
+      </div>
+
+      <div id="b6" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>Swimming pool</h3>
+        <img src="../images/house_pool.png" alt="Swimming Pool">
+        <figcaption>Large infinity pool overlooking the beach</figcaption>
+      </div>
+
+      <div id="b7" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>Master bedroom</h3>
+        <img src="../images/house_bedroom1.png" alt="Master bedroom">
+        <figcaption>Master bedroom with an ensuite bathroom and queen size bed</figcaption>
+      </div>
+
+      <div id="b8" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>Ensuite bathroom</h3>
+        <img src="../images/house_bathroom1.png" alt="Ensuite bathroom">
+        <figcaption>Bathroom attached to the master bedroom</figcaption>
+      </div>
+
+      <div id="b9" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h3>Bathroom with attached sauna</h3>
+        <img src="../images/house_bathroom2.png" alt="Bathroom and sauna">
+        <figcaption>Bathroom with attached sauna</figcaption>
+      </div>
+</div>
+<div class="footer">
+    <p>Contact us: Sally Sharp (00)1234 1122
+     <br>   Address: 1234 Sandy Beach Road Queenscliffe, New Zealand.</p>
+  </div>
+
+  <script>function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }</script>
+</body>
+</html>
